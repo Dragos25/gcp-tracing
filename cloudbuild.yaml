@@ -1,7 +1,7 @@
 steps:
   - name: gcr.io/k8s-skaffold/pack
     env:
-      - GOOGLE_RUNTIME_VERSION=17
+      - GOOGLE_RUNTIME_VERSION=1.17
     args:
       - build
       - '$_GCR_HOSTNAME/$PROJECT_ID/$REPO_NAME/$_SERVICE_NAME:$COMMIT_SHA'
@@ -17,7 +17,7 @@ steps:
     id: Push
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk:slim'
     env:
-      - GOOGLE_RUNTIME_VERSION=17
+      - GOOGLE_RUNTIME_VERSION=1.17
     args:
       - run
       - services
