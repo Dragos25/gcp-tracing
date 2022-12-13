@@ -22,6 +22,15 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/com.google.cloud.opentelemetry/exporter-trace -->
+        <dependency>
+            <groupId>com.google.cloud.opentelemetry</groupId>
+            <artifactId>exporter-trace</artifactId>
+            <version>0.15.0</version>
+            <scope>runtime</scope>
+        </dependency>
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
